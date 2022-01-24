@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  	<title>Сириус</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+  	<header class="header">
+  	  <div class="container">
+        <div class="logo">
+          <img class="logo__img" src="images/logo.png" alt="logo">
+        </div>
+        <div class="choice">
+          <div>Выберите ваш город:</div>
+          <div class="choice-city">Санкт-Петербург</div>
+        </div>
+        <form class="search">
+            <label>
+              <span class="visually-hidden">Поиск</span>
+              <input class="search__field" name="query" placeholder="Поиск" required>
+            </label>
+        </form>
+        <div class="work-mode">
+          <span>
+            Режим работы:<br>
+            Пн-Пт с 8:00-18:00
+          </span>
+        </div>
+        <div class="block-socials">
+          <ul class="socials">
+             <li class="socials-item">
+               <a href="#0" class="socials-link socials-link-facebook">
+                 <span class="visually-hidden">facebook</span>
+               </a>
+             </li>
+             <li class="socials-item">
+               <a href="#0" class="socials-link socials-link-instagram">
+                 <span class="visually-hidden">instagram</span>
+               </a>
+             </li>
+             <li class="socials-item">
+               <a href="#0" class="socials-link socials-link-vkontakte">
+                 <span class="visually-hidden">vkontakte</span>
+               </a>
+             </li>
+           </ul>
+         </div>
+         <div class="phone-city">
+           <div>г.Москва</div>
+           <div class="phone">
+                +7(495)777-2345 
+           </div>
+           <div class="order-call">
+            <a href="tel:+74957772345">
+              Заказать звонок
+            </a>
+           </div>
+         </div>
+         <div class="phone-city">
+           <div>г.Ногинск</div>
+           <div class="phone">
+                +7(495)600-4400
+           </div>
+           <div class="order-call">
+            <a href="tel:+74956004400">
+              Заказать звонок
+            </a>
+           </div>
+         </div>
+  	  </div>
+  	</header>
+    <div class="big-menu">
+        <div class="container">
+          <button class="menu-catalog">
+            <div class="menu-catalog-hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="menu-catalog-text">
+              Каталог
+            </div>
+          </button>
+          <div class="logo">
+            <img class="logo__img" src="images/logo.png" alt="logo">
+          </div>
+          <nav class="menu">
+            <ul class="menu-list">
+              <li class="menu-list-item">
+                <a href="#">Новости</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="#">О компании</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="#">Скидки</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="#">Доставка и оплата</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="#">Услуги</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="#">Дилеры</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="#">Магазины</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="#">Контакты</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="#">Честный знак</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="auth-block">
+            <div class="like-cart">
+              <div class="like-cart__counts">
+                <svg class="like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.3666 2.84172C16.941 2.41589 16.4356 2.0781 15.8794 1.84763C15.3232 1.61716 14.727 1.49854 14.125 1.49854C13.5229 1.49854 12.9267 1.61716 12.3705 1.84763C11.8143 2.0781 11.3089 2.41589 10.8833 2.84172L9.99997 3.72506L9.11663 2.84172C8.25689 1.98198 7.09083 1.49898 5.87497 1.49898C4.65911 1.49898 3.49304 1.98198 2.6333 2.84172C1.77356 3.70147 1.29056 4.86753 1.29056 6.08339C1.29056 7.29925 1.77356 8.46531 2.6333 9.32506L3.51663 10.2084L9.99997 16.6917L16.4833 10.2084L17.3666 9.32506C17.7925 8.89943 18.1303 8.39407 18.3607 7.83785C18.5912 7.28164 18.7098 6.68546 18.7098 6.08339C18.7098 5.48132 18.5912 4.88514 18.3607 4.32893C18.1303 3.77271 17.7925 3.26735 17.3666 2.84172V2.84172Z" stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="like-cart__count">0</div>
+              </div>
+              <div class="like-cart__counts">
+                <svg class="cart__img" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.50002 19.3332C7.96026 19.3332 8.33335 18.9601 8.33335 18.4998C8.33335 18.0396 7.96026 17.6665 7.50002 17.6665C7.03978 17.6665 6.66669 18.0396 6.66669 18.4998C6.66669 18.9601 7.03978 19.3332 7.50002 19.3332Z" stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16.6666 19.3332C17.1269 19.3332 17.5 18.9601 17.5 18.4998C17.5 18.0396 17.1269 17.6665 16.6666 17.6665C16.2064 17.6665 15.8333 18.0396 15.8333 18.4998C15.8333 18.9601 16.2064 19.3332 16.6666 19.3332Z" stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M0.833313 1.8335H4.16665L6.39998 12.9918C6.47618 13.3755 6.6849 13.7201 6.9896 13.9654C7.2943 14.2107 7.67556 14.341 8.06665 14.3335H16.1666C16.5577 14.341 16.939 14.2107 17.2437 13.9654C17.5484 13.7201 17.7571 13.3755 17.8333 12.9918L19.1666 6.00016H4.99998" stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="like-cart__count">0</div>
+              </div>
+            </div>
+            <div class="authorization">
+              <a><img src="images/user.png" alt="">
+              <span>Войти</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="bread-crumb">
+        <ol class="bread-crumb-inner">
+          <li class="bread-crumb-item">
+              <a href="#">Каталог товаров</a>
+          </li>
+          <li class="bread-crumb-item">
+              <a href="#">Спецодежда</a>
+          </li>
+          <li class="bread-crumb-item">
+              <a href="#">Спецодежда зимняя</a>
+          </li>
+        </ol>
+        <ol class="bread-crumb__mobile">
+          <li class="bread-crumb__mobile-item"><a href="#">Назад</a></li>
+        </ol>
+      </nav>
+      <div class="content">
+        <div class="container">
+          <h1 class="context-title">Спецодежда зимняя</h1>
+          <div class="context-tags">
+            <ul class="tags-list">
+              <li class="tags-list-item">
+                <a href="#0">Спецодежда с заключением Минпромторга</a>
+              </li>
+              <li class="tags-list-item">
+                <a href="#0">Костюмы женские</a>
+              </li>
+              <li class="tags-list-item">
+                <a href="#0">Костюмы мужские</a>
+              </li>
+              <li class="tags-list-item">
+                <a href="#0">Костюмы сварщика</a>
+              </li>
+              <li class="tags-list-item">
+                <a href="#0">Жилеты женские</a>
+              </li>
+              <li class="tags-list-item">
+                <a href="#0">Жилеты мужские</a>
+              </li>
+              <li class="tags-list-item">
+                <a href="#0">Жилеты зимние</a>
+              </li>
+              <li class="tags-list-item">
+                <a href="#0">Брюки</a>
+              </li>
+              <li class="tags-list-item">
+                <a href="#0">Куртки женские</a>
+              </li>
+              <li class="tags-list-item">
+                <a href="#0">Куртки мужские</a>
+              </li>
+              <li class="tags-list-item">
+                <a href="#0">Полукомбинезоны зимние</a>
+              </li>
+              <div id="tags-list-id">
+                <li class="tags-list-item">
+                  <a href="#0">Костюмы сварщика</a>
+                </li>
+                <li class="tags-list-item">
+                  <a href="#0">Жилеты женские</a>
+                </li>
+                <li class="tags-list-item">
+                  <a href="#0">Жилеты мужские</a>
+                </li>
+              </div>
+              <button id="tags-list-show" onclick=" document.getElementById('tags-list-id').style.display='none'; document.getElementById('tags-list-show').style.display='none'; document.getElementById('tags-list-hide').style.display='flex';" style="display:none;">Скрыть</button>
+              <button id="tags-list-hide" onclick="document.getElementById('tags-list-id').style.display='flex'; document.getElementById('tags-list-hide').style.display='none'; document.getElementById('tags-list-show').style.display='flex';">Показать</button>
+            </ul>
+          </div>
+          <div>
+          </div>
+        </div>
+     </div>
+     <main class="main">
+      <div class="container">
+        <div class="main-catalog">
+          <div class="leftblock" id="leftblock">
+            <button onclick="document.getElementById('leftblock').style.display='none';" class="leftblock__close-filter">
+              <img src="images/close-filter.png" alt="">
+            </button>
+            <section class="leftblock-radio-type">
+              <input id="info__body_1" class="info__switch" type="checkbox">
+              <label for="info__body_1" class="leftblock__title">Цена, руб</label>
+              <div class="info__body info__body-range">
+                <div id="slider-range">
+                  <div class="slider-range__min">
+                    <input type="text" id="min" class="slider-range__value" value="86">
+                  </div>
+                  <div class="slider-range__max">
+                    <input type="text" id="max" class="slider-range__value" value="100000">
+                  </div>
+                </div>
+                <div id="slider"></div>
+              </div>
+            </section>
+            <section class="leftblock-radio-type">
+              <input id="info__body_2" class="info__switch" type="checkbox">
+              <label for="info__body_2" class="leftblock__title">Вид изделия</label>
+              <div class="info__body info__body-type">
+                <div class="leftblock-radio">
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-group">
+                    <span class="radio-group-text">Брюки</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-group">
+                    <span class="radio-group-text radio-group-gray">Жилет</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-group">
+                    <span class="radio-group-text">Костюм</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-group">
+                    <span class="radio-group-text">Куртка</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-group">
+                    <span class="radio-group-text">Полукомбинезон</span>
+                  </label>
+                </div>
+              </div>
+            </section>
+            <section class="leftblock-radio-type">
+              <input id="info__body_3" class="info__switch" type="checkbox">
+              <label for="info__body_3" class="leftblock__title">Сезон</label>
+              <div class="info__body info__body-season">
+                <div class="leftblock-radio">
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-season">
+                    <span class="radio-group-text">Зима</span>
+                  </label>
+                </div>
+              </div>
+            </section>
+            <section class="leftblock-radio-type">
+              <input id="info__body_4" class="info__switch" type="checkbox">
+              <label for="info__body_4" class="leftblock__title">Торговая марка / Бренд</label>
+              <div class="info__body info__body-brand">
+                <div class="leftblock-radio">
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-brand">
+                    <span class="radio-group-text">Сириус</span>
+                  </label>
+                </div>
+              </div>
+            </section>
+            <section class="leftblock-radio-type">
+              <input id="info__body_5" class="info__switch" type="checkbox">
+              <label for="info__body_5" class="leftblock__title">Пол</label>
+              <div class="info__body info__body-gender">
+                <div class="leftblock-radio">
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-gender">
+                    <span class="radio-group-text">Женский</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-gender">
+                    <span class="radio-group-text">Мужской</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-gender">
+                    <span class="radio-group-text">Универсальный</span>
+                  </label>
+                </div>
+              </div>
+            </section>
+            <section class="leftblock-radio-type">
+              <input id="info__body_6" class="info__switch" type="checkbox">
+              <label for="info__body_6" class="leftblock__title">Состав</label>
+              <div class="info__body info__body-structure">
+                <div class="leftblock-radio">
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-structure">
+                    <span class="radio-group-text">Брюки</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-structure">
+                    <span class="radio-group-text">Жилет</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-structure">
+                    <span class="radio-group-text">Костюм</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-structure">
+                    <span class="radio-group-text">Куртка</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-structure">
+                    <span class="radio-group-text">Полукомбинезон</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-structure">
+                    <span class="radio-group-text">Полукомбинезон</span>
+                  </label>
+                </div>
+              </div>
+            </section>
+            <section class="leftblock-radio-type">
+              <input id="info__body_7" class="info__switch" type="checkbox">
+              <label for="info__body_7" class="leftblock__title">Ткань/Материал верха</label>
+              <div class="info__body info__body-material">
+                <div class="leftblock-radio">
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-material">
+                    <span class="radio-group-text">Брюки</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-material">
+                    <span class="radio-group-text">Жилет</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-material">
+                    <span class="radio-group-text">Костюм</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-material">
+                    <span class="radio-group-text">Куртка</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-material">
+                    <span class="radio-group-text">Полукомбинезон</span>
+                  </label>
+                </div>
+              </div>
+            </section>
+            <section class="leftblock-radio-type">
+              <input id="info__body_8" class="info__switch" type="checkbox">
+              <label for="info__body_8" class="leftblock__title">Утеплитель</label>
+              <div class="info__body info__body-insulation">
+                <div class="leftblock-radio">
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-insulation">
+                    <span class="radio-group-text">Брюки</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-insulation">
+                    <span class="radio-group-text">Жилет</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-insulation">
+                    <span class="radio-group-text">Костюм</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-insulation">
+                    <span class="radio-group-text">Куртка</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-insulation">
+                    <span class="radio-group-text">Полукомбинезон</span>
+                  </label>
+                </div>
+              </div>
+            </section>
+            <section class="leftblock-radio-type">
+              <input id="info__body_9" class="info__switch" type="checkbox">
+              <label for="info__body_9" class="leftblock__title">Назначение</label>
+              <div class="info__body info__body-purpose">
+                <div class="leftblock-radio">
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-purpose">
+                    <span class="radio-group-text">Брюки</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-purpose">
+                    <span class="radio-group-text">Жилет</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-purpose">
+                    <span class="radio-group-text">Костюм</span>
+                  </label>
+                </div>
+              </div>
+            </section>
+            <section class="leftblock-radio-type">
+              <input id="info__body_10" class="info__switch" type="checkbox">
+              <label for="info__body_10" class="leftblock__title">Цвет</label>
+              <div class="info__body info__body-color">
+                <div class="leftblock-radio">
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-color">
+                    <span class="radio-group-text">Бирюзовый</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-color">
+                    <span class="radio-group-text">Васильковый</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-color">
+                    <span class="radio-group-text">Красный</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-color">
+                    <span class="radio-group-text">Лимнонный</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-color">
+                    <span class="radio-group-text">Олива</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-color">
+                    <span class="radio-group-text">Оранжевый</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-color">
+                    <span class="radio-group-text">Серый</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-color">
+                    <span class="radio-group-text">Синий</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-color">
+                    <span class="radio-group-text">Черный, красный</span>
+                  </label>
+                  <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-color">
+                    <span class="radio-group-text">Черный</span>
+                  </label>
+                </div>
+              </div>
+            </section>
+            <section class="leftblock-button">
+              <button class="button-filter">Показать (123)</button>
+              <button type="reset" class="button-reset">Сбросить</button>
+            </section>
+          </div>
+          <div class="centerblock">
+            <div class="catalog-shop">
+              <select class="catalog-shop__select">
+                <option>По умолчанию</option>
+                <option>По популярности</option>
+                <option selected>По возрастанию цены</option>
+                <option>По убыванию цены</option>
+                <option>По новинкам</option>
+                <option>По скидке</option>
+                <option>По алфавиту</option>
+              </select>
+              <button onclick="(document.getElementById('leftblock').style.display='block')" class="catalog-shop__filter" id="contain">Фильтр</button>
+            </div>
+            <div class="cards">
+              <article class="content-card">
+                <img class="content-card__img" src="images/cart-one.png" alt="Изображение товара">
+                <div class="content-card__number">Арт 1232425</div>
+                <div class="content-card__descr">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</div>
+                <div class="content-card__opt-retail">
+                  <div class="content-card__opt">Опт 3144 ₽</div>
+                  <div class="content-card__retail">Розница 4235 ₽</div>
+                </div>
+                <div class="cart-like">
+                  <button class="cart" data-type="popup">В корзину</button>
+                  <svg class="cart-like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11666 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49307 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51666 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </article>
+              <article class="content-card">
+                <img class="content-card__img" src="images/cart-two.png" alt="Изображение товара">
+                <div class="content-card__number">Арт 1232425</div>
+                <div class="content-card__descr">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</div>
+                <div class="content-card__opt-retail">
+                  <div class="content-card__opt">Опт 3144 ₽</div>
+                  <div class="content-card__retail">Розница 4235 ₽</div>
+                </div>
+                <div class="cart-like">
+                  <button class="cart" data-type="popup">В корзину</button>
+                  <svg class="cart-like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11666 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49307 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51666 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </article>
+              <article class="content-card">
+                <img class="content-card__img" src="images/cart-three.png" alt="Изображение товара">
+                <div class="content-card__number">Арт 1232425</div>
+                <div class="content-card__descr">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</div>
+                <div class="content-card__opt-retail">
+                  <div class="content-card__opt">Опт 3144 ₽</div>
+                  <div class="content-card__retail">Розница 4235 ₽</div>
+                </div>
+                <div class="cart-like">
+                  <button class="cart" data-type="popup">В корзину</button>
+                  <svg class="cart-like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11666 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49307 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51666 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </article>
+              <article class="content-card">
+                <img class="content-card__img" src="images/cart-four.png" alt="Изображение товара">
+                <div class="content-card__number">Арт 1232425</div>
+                <div class="content-card__descr">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</div>
+                <div class="content-card__opt-retail">
+                  <div class="content-card__opt">Опт 3144 ₽</div>
+                  <div class="content-card__retail">Розница 4235 ₽</div>
+                </div>
+                <div class="cart-like">
+                  <button class="cart" data-type="popup">В корзину</button>
+                  <svg class="cart-like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11666 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49307 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51666 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </article>
+              <article class="content-card">
+                <img class="content-card__img" src="images/cart-five.png" alt="Изображение товара">
+                <div class="content-card__number">Арт 1232425</div>
+                <div class="content-card__descr">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</div>
+                <div class="content-card__opt-retail">
+                  <div class="content-card__opt">Опт 3144 ₽</div>
+                  <div class="content-card__retail">Розница 4235 ₽</div>
+                </div>
+                <div class="cart-like">
+                  <button class="cart" data-type="popup">В корзину</button>
+                  <svg class="cart-like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11666 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49307 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51666 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </article>
+              <article class="content-card">
+                <img class="content-card__img" src="images/cart-two.png" alt="Изображение товара">
+                <div class="content-card__number">Арт 1232425</div>
+                <div class="content-card__descr">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</div>
+                <div class="content-card__opt-retail">
+                  <div class="content-card__opt">Опт 3144 ₽</div>
+                  <div class="content-card__retail">Розница 4235 ₽</div>
+                </div>
+                <div class="cart-like">
+                  <button class="cart" data-type="popup">В корзину</button>
+                  <svg class="cart-like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11666 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49307 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51666 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </article>
+              <article class="content-card">
+                <img class="content-card__img" src="images/cart-three.png" alt="Изображение товара">
+                <div class="content-card__number">Арт 1232425</div>
+                <div class="content-card__descr">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</div>
+                <div class="content-card__opt-retail">
+                  <div class="content-card__opt">Опт 3144 ₽</div>
+                  <div class="content-card__retail">Розница 4235 ₽</div>
+                </div>
+                <div class="cart-like">
+                  <button class="cart" data-type="popup">В корзину</button>
+                  <svg class="cart-like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11666 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49307 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51666 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </article>
+              <article class="content-card">
+                <img class="content-card__img" src="images/cart-four.png" alt="Изображение товара">
+                <div class="content-card__number">Арт 1232425</div>
+                <div class="content-card__descr">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</div>
+                <div class="content-card__opt-retail">
+                  <div class="content-card__opt">Опт 3144 ₽</div>
+                  <div class="content-card__retail">Розница 4235 ₽</div>
+                </div>
+                <div class="cart-like">
+                  <button class="cart" data-type="popup">В корзину</button>
+                  <svg class="cart-like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11666 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49307 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51666 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </article>
+              <article class="content-card">
+                <img class="content-card__img" src="images/cart-five.png" alt="Изображение товара">
+                <div class="content-card__number">Арт 1232425</div>
+                <div class="content-card__descr">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</div>
+                <div class="content-card__opt-retail">
+                  <div class="content-card__opt">Опт 3144 ₽</div>
+                  <div class="content-card__retail">Розница 4235 ₽</div>
+                </div>
+                <div class="cart-like">
+                  <button class="cart" data-type="popup">В корзину</button>
+                  <svg class="cart-like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11666 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49307 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51666 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </article>
+              <article class="content-card">
+                <img class="content-card__img" src="images/cart-two.png" alt="Изображение товара">
+                <div class="content-card__number">Арт 1232425</div>
+                <div class="content-card__descr">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</div>
+                <div class="content-card__opt-retail">
+                  <div class="content-card__opt">Опт 3144 ₽</div>
+                  <div class="content-card__retail">Розница 4235 ₽</div>
+                </div>
+                <div class="cart-like">
+                  <button class="cart" data-type="popup">В корзину</button>
+                  <svg class="cart-like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11666 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49307 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51666 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </article>
+              <article class="content-card">
+                <img class="content-card__img" src="images/cart-three.png" alt="Изображение товара">
+                <div class="content-card__number">Арт 1232425</div>
+                <div class="content-card__descr">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</div>
+                <div class="content-card__opt-retail">
+                  <div class="content-card__opt">Опт 3144 ₽</div>
+                  <div class="content-card__retail">Розница 4235 ₽</div>
+                </div>
+                <div class="cart-like">
+                  <button class="cart" data-type="popup">В корзину</button>
+                  <svg class="cart-like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11666 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49307 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51666 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </article>
+              <article class="content-card">
+                <img class="content-card__img" src="images/cart-four.png" alt="Изображение товара">
+                <div class="content-card__number">Арт 1232425</div>
+                <div class="content-card__descr">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</div>
+                <div class="content-card__opt-retail">
+                  <div class="content-card__opt">Опт 3144 ₽</div>
+                  <div class="content-card__retail">Розница 4235 ₽</div>
+                </div>
+                <div class="cart-like">
+                  <button class="cart" data-type="popup">В корзину</button>
+                  <svg class="cart-like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11666 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49307 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51666 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </article>
+              <article class="content-card">
+                <img class="content-card__img" src="images/cart-five.png" alt="Изображение товара">
+                <div class="content-card__number">Арт 1232425</div>
+                <div class="content-card__descr">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</div>
+                <div class="content-card__opt-retail">
+                  <div class="content-card__opt">Опт 3144 ₽</div>
+                  <div class="content-card__retail">Розница 4235 ₽</div>
+                </div>
+                <div class="cart-like">
+                  <button class="cart" data-type="popup">В корзину</button>
+                  <svg class="cart-like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11666 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49307 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51666 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </article>
+              <article class="content-card">
+                <img class="content-card__img" src="images/cart-two.png" alt="Изображение товара">
+                <div class="content-card__number">Арт 1232425</div>
+                <div class="content-card__descr">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</div>
+                <div class="content-card__opt-retail">
+                  <div class="content-card__opt">Опт 3144 ₽</div>
+                  <div class="content-card__retail">Розница 4235 ₽</div>
+                </div>
+                <div class="cart-like">
+                  <button class="cart" data-type="popup">В корзину</button>
+                 <svg class="cart-like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11666 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49307 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51666 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </article>
+              <article class="content-card">
+                <img class="content-card__img" src="images/cart-three.png" alt="Изображение товара">
+                <div class="content-card__number">Арт 1232425</div>
+                <div class="content-card__descr">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</div>
+                <div class="content-card__opt-retail">
+                  <div class="content-card__opt">Опт 3144 ₽</div>
+                  <div class="content-card__retail">Розница 4235 ₽</div>
+                </div>
+                <div class="cart-like">
+                  <button class="cart" data-type="popup">В корзину</button>
+                  <svg class="cart-like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11666 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49307 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51666 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </article>
+              <article class="content-card">
+                <img class="content-card__img" src="images/cart-four.png" alt="Изображение товара">
+                <div class="content-card__number">Арт 1232425</div>
+                <div class="content-card__descr">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</div>
+                <div class="content-card__opt-retail">
+                  <div class="content-card__opt">Опт 3144 ₽</div>
+                  <div class="content-card__retail">Розница 4235 ₽</div>
+                </div>
+                <div class="cart-like">
+                  <button class="cart" data-type="popup">В корзину</button>
+                  <svg class="cart-like__img" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11666 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49307 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51666 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </article>
+            </div>
+            <button class="show-more">Показать еще</button>
+            <div class="pogination">
+              <a href="#" class="pogination-number">1</a>
+              <a href="#" class="pogination-number">2</a>
+              <a href="#" class="pogination-number">3</a>
+              <a href="#" class="pogination-number">4</a>
+              <a href="#" class="pogination-number">Все</a>
+            </div>
+            <div class="popup">
+              <div class="options-selection__form">
+                <div class="options-selection__title">
+                  <div class="options-selection__name">Выбор опций</div>
+                  <a href="#" data-type="popup-close"></a>
+                </div>
+                <div class="options-selection__info">
+                  <div>Размерный ряд</div>
+                  <div>Количество</div>
+                </div>
+                <div class="options-selection__block">
+                  <div class="options-selection__item">
+                    <div>Размер 104-108, Рост 170-176 (Арт. 43585)</div>
+                    <div class="options-selection__cart">
+                      <input type="text" placeholder="0">
+                      <img src="images/plus.png" alt="">
+                      <img src="images/minus.png" alt="">
+                    </div>
+                  </div>
+                  <div class="options-selection__item">
+                    <div>Размер 104-108, Рост 170-176 (Арт. 43585)</div>
+                    <div class="options-selection__cart">
+                      <input type="text" placeholder="0">
+                      <img src="images/plus.png" alt="">
+                      <img src="images/minus.png" alt="">
+                    </div>
+                  </div>
+                  <div class="options-selection__item">
+                    <div>Размер 104-108, Рост 170-176 (Арт. 43585)</div>
+                    <div class="options-selection__cart">
+                      <input type="text" placeholder="0">
+                      <img src="images/plus.png" alt="">
+                      <img src="images/minus.png" alt="">
+                    </div>
+                  </div>
+                  <div class="options-selection__item">
+                    <div>Размер 104-108, Рост 170-176 (Арт. 43585)</div>
+                    <div class="options-selection__cart">
+                      <input type="text" placeholder="0">
+                      <img src="images/plus.png" alt="">
+                      <img src="images/minus.png" alt="">
+                    </div>
+                  </div>
+                  <div class="options-selection__item">
+                    <div>Размер 104-108, Рост 170-176 (Арт. 43585)</div>
+                    <div class="options-selection__cart">
+                      <input type="text" placeholder="0">
+                      <img src="images/plus.png" alt="">
+                      <img src="images/minus.png" alt="">
+                    </div>
+                  </div>
+                  <div class="options-selection__item">
+                    <div>Размер 104-108, Рост 170-176 (Арт. 43585)</div>
+                    <div class="options-selection__cart">
+                      <input type="text" placeholder="0">
+                      <img src="images/plus.png" alt="">
+                      <img src="images/minus.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <button class="options-selection__add">Добавить в корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </main>
+
+     <footer class="footer">
+      <div class="container">
+        <div class="footer__block">
+          <div class="footer__block-item">
+            <div class="phone-block">
+              <div class="phone">
+                +7(495)777-2345 
+              </div>
+              <div class="order-call">
+                <a href="tel:+74957772345">
+                  Заказать звонок
+                </a>
+              </div>
+            </div>
+            <div class="email-block">
+              <a href="mailto:info@planeta-sirius.ru">info@planeta-sirius.ru</a>
+            </div>
+            <div class="block-socials">
+              <ul class="socials">
+                 <li class="socials-item">
+                   <a href="#0" class="socials-link socials-link-facebook">
+                     <span class="visually-hidden">facebook</span>
+                   </a>
+                 </li>
+                 <li class="socials-item">
+                   <a href="#0" class="socials-link socials-link-instagram">
+                     <span class="visually-hidden">instagram</span>
+                   </a>
+                 </li>
+                 <li class="socials-item">
+                   <a href="#0" class="socials-link socials-link-vkontakte">
+                     <span class="visually-hidden">vkontakte</span>
+                   </a>
+                 </li>
+               </ul>
+             </div>
+            <div class="price-list">
+              <a href="#" class="price-download" download>Скачать прайс-лист</a>
+            </div>
+          </div>
+          <div class="footer__block-item footer__block-menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item"><a href="#">каталог</a></li>
+              <li class="footer__menu-item"><a href="#">спецодежда</a></li>
+              <li class="footer__menu-item"><a href="#">средства защиты рук</a></li>
+              <li class="footer__menu-item"><a href="#">активный отдых</a></li>
+              <li class="footer__menu-item footer__menu_mr"><a href="#">хозтовары и постельные принадлежности</a></li>
+              <li class="footer__menu-item footer__menu_red"><a href="#">ликвидация</a></li>
+            </ul>
+          </div>
+          <div class="footer__block-item footer__block-menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item"><a href="#">обувь</a></li>
+              <li class="footer__menu-item"><a href="#">средства индивидуальной защиты</a></li>
+              <li class="footer__menu-item"><a href="#">жилеты на все случаи жизни</a></li>
+              <li class="footer__menu-item"><a href="#">линия plus</a></li>
+              <li class="footer__menu-item footer__menu_mobile"><a href="#">ликвидация</a></li>       
+            </ul>
+          </div>
+          <div class="footer__block-item">
+            <div>
+              <label class="subsrcibe">
+                <div class="subsrcibe-text">Подпишитесь на новости и акции и будьте<br> в курсе всего!</div>
+                <div class="footer__block-subsrcibe"><input type="email" class="email-subsrcibe" placeholder="Введите свой e-mail"></div>
+              </label>
+            </div>
+            <div>
+              <label class="checkbox-block">
+                <input type="checkbox" class="checkbox__subsrcibe" required>
+                <div class="checkbox-text">Я даю согласие на обработку персональных<br> данных и соглашаюсь с правилами обработки<br> персональных данных.</div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-copy">
+      <div class="container">
+      <div class="footer-copyright">2021 © PLANETA-SIRIUS.RU</div>
+      <div class="footer-info">Вся приведенная на сайте информация, носят исключительно ознакомительный характер и не является публичной офертой.</div>
+      </div>
+    </div>
+    <script>
+      var close = document.querySelector(".options-selection__close");
+      var popup = document.querySelector('.popup');
+
+
+      document.addEventListener('click', function(event) {
+        if(event.target.dataset.type == 'popup') {
+          event.preventDefault();
+          popup.style.display = 'block';
+        }
+      });
+
+      document.addEventListener('click', function(event) {
+        if(event.target.dataset.type == 'popup-close') {
+          event.preventDefault();
+          popup.style.display = 'none';
+        }
+      });
+
+      popup.addEventListener("click", function(event) {
+      e = event || window.event
+      if (e.target == this) {
+        popup.classList.add("hidden");
+      }
+    });
+    </script>
+  </body>
+</html>
